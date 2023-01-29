@@ -351,6 +351,17 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 15px;
+    justify-content: center;
+  }
+  @media (max-width: 400px) {
+  
+    .questions-accordion {
+      display: flex;
+      justify-content: center;
+    }
+    .questions-accordion div{
+      max-width:350px;
+    }
   }
 
   /***********video background*************/
