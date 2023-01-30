@@ -116,8 +116,9 @@
     overflow: hidden;
   }
   .community-content img {
-    height: 400px;
+    height: 100%;
     transition: 0.5s;
+    object-fit: cover;
   }
   .community-content .box {
     overflow: hidden;
@@ -131,9 +132,7 @@
   .community-content .box:nth-child(2) {
     grid-row: span 2;
   }
-  .community-content .box:nth-child(2) img {
-    height: 100%;
-  }
+ 
   @media (max-width: 727px) {
     .community-content .box:nth-child(1) {
       grid-area: 1 / 1 / 1 / span 1;
@@ -141,9 +140,7 @@
     .community-content .box:nth-child(2) {
       grid-row: span 1;
     }
-    .community-content .box img {
-      width: 100%;
-    }
+ 
   }
 
   /****about-us*******/
