@@ -132,7 +132,7 @@
   .community-content .box:nth-child(2) {
     grid-row: span 2;
   }
- 
+
   @media (max-width: 727px) {
     .community-content .box:nth-child(1) {
       grid-area: 1 / 1 / 1 / span 1;
@@ -140,7 +140,6 @@
     .community-content .box:nth-child(2) {
       grid-row: span 1;
     }
- 
   }
 
   /****about-us*******/
@@ -218,7 +217,7 @@
   /*******our members********/
   .our-members-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
   }
 
@@ -226,10 +225,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: space-between;
   }
 
   .our-members-content .box-holder .box {
-    flex-basis: 45%;
+    flex-basis: 48%;
     padding: 20px;
     background: rgb(205 173 173);
   }
@@ -243,29 +243,32 @@
   .our-members-img img {
     flex-basis: 50%;
   }
+
   @media (max-width: 1023px) {
+    .our-members-content {
+      display: block;
+    }
+
     .our-members-content .box-holder .box {
-      flex-basis: 98%;
+      flex-basis: 100%;
       text-align: center;
     }
     .our-members-content .info {
       text-align: center;
     }
     .our-members-img img {
-      flex-basis: 80%;
+      flex-basis: 50%;
       margin: 0 auto;
     }
   }
-  @media (max-width: 400px) {
+  @media (max-width: 422px) {
     .our-members-content .box-holder {
       margin: auto;
     }
     .our-members-content .box-holder .box {
-      flex-basis: 84%;
+      flex-basis: 100%;
     }
-    .our-members-content .info {
-      max-width: 340px;
-    }
+
     .our-members-img img {
       flex-basis: 100%;
     }
@@ -351,13 +354,12 @@
     justify-content: center;
   }
   @media (max-width: 400px) {
-  
     .questions-accordion {
       display: flex;
       justify-content: center;
     }
-    .questions-accordion div{
-      max-width:350px;
+    .questions-accordion div {
+      max-width: 350px;
     }
   }
 
